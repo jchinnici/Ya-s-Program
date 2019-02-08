@@ -25,21 +25,9 @@ namespace ChangeCalculatorApp
             Console.WriteLine("Enter Cost");
             var cost = Decimal.Parse(Console.ReadLine());
             var change = payment - cost;
-            Console.WriteLine("Your change is " + change);
-
-
-
-            while (change >= dlr)
-            {
-                nmbDlr++;
-                change = change - dlr;
-            }
-
-
-            Console.WriteLine("Dollars received " + nmbDlr);
-            Console.Read();
-
-            new MathJoe();
+            
+            new MathJoe(change);
+            Console.WriteLine("Your change is " nmbrOfDlr)
         }
     }
 
