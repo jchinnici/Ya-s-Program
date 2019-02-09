@@ -16,10 +16,12 @@ namespace ChangeCalculatorApp
 
         public MathJoe(decimal change)
         {
+            int nmbrOfDlr = 0;
             if(change >= dlr)
             {
-                var nmbrOfDlr = Convert.ToInt32(change) / qtr;
+                nmbrOfDlr = Convert.ToInt32(Math.Floor(change / dlr));
                 change = change - nmbrOfDlr * dlr;
+                Console.WriteLine($"{nmbrOfDlr} : number of dollars");
             }
             if(change >= qtr)
             {
@@ -41,7 +43,7 @@ namespace ChangeCalculatorApp
                 var nmbrOfPny = Convert.ToInt32(change) / pny;
                 change = change - nmbrOfPny * pny;
             }
-            Console.WriteLine(nmbrO)
+            
 
         }
     }
