@@ -21,28 +21,32 @@ namespace ChangeCalculatorApp
             {
                 nmbrOfDlr = Convert.ToInt32(Math.Floor(change / dlr));
                 change = change - nmbrOfDlr * dlr;
-                Console.WriteLine($"{nmbrOfDlr} : number of dollars");
+                Console.WriteLine($"{nmbrOfDlr} dollars");
             }
             if(change >= qtr)
             {
-                var nmbrOfQrt = Convert.ToInt32(change) / qtr;
-                change = change - nmbrOfQrt * qtr;
+                var nmbrOfQtr = Convert.ToInt32(Math.Floor(change / qtr));
+                change = change - nmbrOfQtr * qtr;
+                Console.WriteLine($"{nmbrOfQtr} quarters");
             }
             if(change >= dme)
             {
-                var nmbrOfDme = Convert.ToInt32(change) / dme;
+                var nmbrOfDme = Convert.ToInt32(Math.Floor(change / dme));
                 change = change - nmbrOfDme * dme;
+                Console.WriteLine($"{nmbrOfDme} dimes");
             }
             if(change >= nkl)
             {
-                var nmbrOfNkl = Convert.ToInt32(change) / nkl;
+                var nmbrOfNkl = Convert.ToInt32(Math.Floor(change / nkl));
                 change = change - nmbrOfNkl * nkl;
+                Console.WriteLine($"{nmbrOfNkl} nickels");
             }
             if(change >= pny)
             {
-                var nmbrOfPny = Convert.ToInt32(change) / pny;
+                var nmbrOfPny = Convert.ToInt32(Math.Floor(change / pny));
                 change = change - nmbrOfPny * pny;
-            }
+                Console.WriteLine($"{nmbrOfPny} pennies");
+            }Console.Read();
             
 
         }

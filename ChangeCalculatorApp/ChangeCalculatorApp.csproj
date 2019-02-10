@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
+    <Compile Include="Change.cs" />
+    <Compile Include="FizzBuzz.cs" />
     <Compile Include="Class3.cs" />
     <Compile Include="SimpleQueue.cs" />
     <Compile Include="Program.cs" />

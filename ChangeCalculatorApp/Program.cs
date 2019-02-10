@@ -8,6 +8,10 @@ namespace ChangeCalculatorApp
         {
             //inside a function variables are all lower case
 
+            new FizzBuzz(Console.ReadLine());
+
+
+
             var queue = new SimpleQueue();
             queue.Push(10);
             queue.Push(15);
