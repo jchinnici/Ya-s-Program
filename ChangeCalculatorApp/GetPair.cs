@@ -9,7 +9,7 @@ namespace ChangeCalculatorApp
     public class GetPair
     {
     int[] intarray = new int[] { 1, 4, 2, 3, 3, 6, -1, 7, 5, 1 };
-    
+    //this.intarray to use this instead of defining
         
     public GetPair(int[] intarray)
         {

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Change.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="GetPair.cs" />
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="Class3.cs" />
