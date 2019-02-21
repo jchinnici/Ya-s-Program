@@ -8,16 +8,19 @@ namespace ChangeCalculatorApp
 {
     public class FindWordinString
     {
-        string book = "the cat wears a red hat but the hat wasnt red to everyone else";
-        public FindWordinString(string book)
-        {for (var i = 0; i < book.Length - 1; i++)
-                if(book.IndexOf("hat") == i)
-                    book.Substring(i);
-            Console.WriteLine(book.IndexOf("hat"));
-            
-        //if you find the "hat" we need to substring the string to start at the point after that first hat
-        // while loop while(book.indexof('hat') == -1)
-        // recursion call function inside a function need an end condition 
+        static string book = "the cat wears a red hat but the hat wasnt red to everyone else";
+
+            static int count = 0;
+            public static void FindWordString()
+            {while (book.IndexOf("hat") == -1)
+            {
+                Console.WriteLine($"number of hats + {count}");
+                count++;
+            }
+
+            //if you find the "hat" we need to substring the string to start at the point after that first hat
+            // while loop while(book.indexof('hat') == -1)
+            // recursion call function inside a function need an end condition 
         }
     }
 }

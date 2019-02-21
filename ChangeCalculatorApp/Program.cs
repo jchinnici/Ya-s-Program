@@ -15,6 +15,8 @@ namespace ChangeCalculatorApp
 
         static void Main(string[] args)
         {
+            new FindWordinString();
+            Console.Read();
             int[] intarray = new int[] { 1, 4, 2, 3, 3, 6, -1, 7, 5, 1 };
             new Insertionstuff();
                 Console.Read();
