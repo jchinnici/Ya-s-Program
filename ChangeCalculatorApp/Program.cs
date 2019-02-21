@@ -15,10 +15,11 @@ namespace ChangeCalculatorApp
 
         static void Main(string[] args)
         {
-            string book = "the cat wears a red hat but the hat wasnt red to everyone else";
-            new FindWordinString(book);
-            
             int[] intarray = new int[] { 1, 4, 2, 3, 3, 6, -1, 7, 5, 1 };
+            new Insertionstuff();
+                Console.Read();
+            
+            
            
             new GetPair(intarray);
             //inside a function variables are all lower case

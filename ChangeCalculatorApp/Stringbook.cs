@@ -16,6 +16,8 @@ namespace ChangeCalculatorApp
             Console.WriteLine(book.IndexOf("hat"));
             
         //if you find the "hat" we need to substring the string to start at the point after that first hat
+        // while loop while(book.indexof('hat') == -1)
+        // recursion call function inside a function need an end condition 
         }
     }
 }

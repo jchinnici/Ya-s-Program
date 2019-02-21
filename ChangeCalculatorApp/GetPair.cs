@@ -13,7 +13,7 @@ namespace ChangeCalculatorApp
         
     public GetPair(int[] intarray)
         {
-            for (var i = 0; i < intarray.Length - 1; i++)
+            for (var i = 0; i < intarray.Length- 1; i++)
                 if (intarray[i] + intarray[i + 1] == 6)
                     Console.WriteLine($"{intarray[i]},{intarray[i + 1]}");
         }
